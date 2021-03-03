@@ -1,0 +1,280 @@
+﻿[{
+    "ProName": "Arani Silk",
+    "ProType": "Handicraft",
+    "Origin": "Arani",
+    "image":"https://i.ibb.co/vPc808s/i01-the-chennai-silks-mlc1624058-4295-c-silk-set0-blowout-front4-2020-12-19-11-13-3-1090x1450.jpg",
+    "Price":"1500",
+    "Desc": "Arani Sari is a traditional sari made in Arani, Tamil Nadu, India. A sari is a strip of unstitched cloth, ranging from four yards to nine yards in length. Saris, derived from the Sanskrit word Saadi, have been described in Tamilian literature as early as the 5th or 6th centuries."
+},
+{
+    "ProName": "Arumbavur Wood Carvings",
+    "ProType": "Handicraft",
+    "Origin": "Arumbavur",
+    "image":"https://i.ibb.co/p0Jv5YP/i01-unnamed.jpg",
+    "Price":"2499",
+    "Desc": "The 500 years old Arumbavur Wooden Carving artisans have their origin traced from Madurai. The Artisans' unique specialities is to hand carve the Wooden Statues, Natural figures, House Main Doors, Pooja Doors, Pooja Mandapas, Wall Panels, Pillars, Wall Brackets, Temple Doors, Temple Cars(Thaer), Ratham, Vaaganam, Church Wall Panels etc., which are manufactured and exported to various parts of the World."
+},
+{
+    "ProName": "Bannari Amman Temple Kumkum",
+    "ProType": "Religious",
+    "Origin": "Bannari",
+    "image":"https://i.ibb.co/RpS8KDd/i01-pooja-kumkum-500x500.jpg",
+    "Price":"899",
+    "Desc": "The Bannari Amman temple is a very old and famous temple. It is located on the Sathy Mysore highway just as one enters the reserve forest area."
+},
+{
+    "ProName": "Bhavani Jamakkalam",
+    "ProType": "Handicraft",
+    "Origin": "Bhavani",
+    "image":"https://i.ibb.co/0y4xrz1/i01-19590806265d146b053e7db815-1.jpg",
+    "Price":"749",
+    "Desc": "Bhavani Jamakkalam refers to blankets and carpets manufactured in Bhavani in Erode district, Tamil Nadu. It has been recognized as a Geographical indication by the Government of India in 2005-06."
+},
+{
+    "ProName": "Chettinad Kottan",
+    "ProType": "Food",
+    "Origin": "Chettinad",
+    "image":"https://i.ibb.co/2Fr286j/i01-be1108043-m.jpg",
+    "Price":"999",
+    "Desc": "The Chettinad kottan is woven from tender palmyra leaves which are stripped from the tree during the summer months. ... The leaves are then spliced into wide strips and sorted out, after which they are dyed in water heated to a boil with the colour added to it. The leaves are then dried in the shade."
+},
+{
+    "ProName": "Coimbatore Wet Grinder",
+    "ProType": "Manufactured",
+    "Origin": "Coimbatore",
+    "image":"https://i.ibb.co/9g7Fqxj/i01-instant-wet-grinder-500x500.jpg",
+    "Price":"7650",
+    "Desc": "Coimbatore Wet Grinder refers to wet grinders manufactured in Coimbatore, Tamil Nadu.[1] It has been recognized as a Geographical indication by the Government of India in 2005-06.[2] As of 2015, Coimbatore has more than 700 wet grinder manufacturers with a monthly output 75,000 units[3] per every 100,000 produced in India.[4]"
+},
+{
+    "ProName": "Dindigul Lock",
+    "ProType": "Manufactured",
+    "Origin": "Dindigul",
+    "image":"https://i.ibb.co/YcgcFcw/i01-71y3d7-DK2-KL-SL1500.jpg",
+    "Price":"499",
+    "Desc": "The famous Dindigul locks are known throughout the world for their superior quality and durability, so much so that even the city is called Lock City. The abundance of iron in this region is the reason for the growth of the lock-making industry. Though machine-made locks are easily available, government institutions like prisons, godowns, hospitals and even temples use the older pattern locks. These lock manufacturing units are limited to an area of 5 km in and around Dindigul. There are over 50 varieties of locks made by the artisans."
+},
+{
+    "ProName": "Eathomozhy Tall Coconut",
+    "ProType": "Agriculture",
+    "Origin": "Eathomozhy",
+    "image":"https://i.ibb.co/SNFh5fX/i01-Coconut2-500x660.jpg",
+    "Price":"100",
+    "Desc": "Eathomozhy Tall Coconut from Tamil Nadu is the only one registered as Geographical Indication (GI). Its tree grows to a height of 30 m and lives for a period over 80 to 100 years."
+},
+{
+    "ProName": "Erode Turmeric",
+    "ProType": "Agriculture",
+    "Origin": "Erode",
+    "image":"https://i.ibb.co/sgv8cVp/i01-erode-turmeric-received-gi-tag.jpg",
+    "Price":"150",
+    "Desc": "Erode has the country's largest turmeric market. Erode Turmeric has finally received GI tag from the Geographical Indication in 2019. ... Erode is also famous for its cattle markets."
+},
+{
+    "ProName": "Kancheepuram Silk",
+    "ProType": "Handicraft",
+    "Origin": "Kancheepuram",
+    "image":"https://i.ibb.co/fphZVj0/i01-img.jpg",
+    "Price":"11950",
+    "Desc": "The Kanchipuram silk sari is a type of silk sari made in the Kanchipuram region in Tamil Nadu, India.[1] These saris are worn as bridal & special occasion saris by most women in Tamil Nadu, Karnataka & Andhra Pradesh. It has been recognized as a Geographical indication by the Government of India in 2005–2006.[2][3][4] As of 2008, an estimated 5,000 families were involved in sari production.[5] There are 25 silk and cotton yarn industries and 60 dyeing units in the region.[6]"
+},
+{
+    "ProName": "Kandangi Saree",
+    "ProType": "Handicraft",
+    "Origin": "Kandangi",
+    "image":"https://i.ibb.co/9nwDqRB/i01-product-jpeg-500x500.jpg",
+    "Price":"1999",
+    "Desc": "Kandangi is a type of saree made from silk threads in Tamil Nadu state of India. Traditionally, Chettinad and Koorainad are two types of Kandangi saree native in Tamil Nadu. However, many new types of Kandangi are now introduced by Tamil Nadu government."
+},
+{
+    "ProName": "Kovai Kora Cotton Sarees",
+    "ProType": "Handicraft",
+    "Origin": "Kovai",
+    "image":"https://i.ibb.co/34WrS8y/i01-kora-cotton-saree-500x500.jpg",
+    "Price":"1199",
+    "Desc": "Kovai Cora cotton or Kovai Kora cotton is a type of saree made in the Coimbatore region in Tamil Nadu, India.[1][2] It has been recognized as a Geographical indication by the Government of India in 2014–15.[3][4]"
+},
+{
+    "ProName": "Kovilpatti kadalai mittai",
+    "ProType": "Food",
+    "Origin": "Kovilpatti",
+    "image":"https://i.ibb.co/809st9y/peanut-chikki-28kadalai-mittai-29-500x500.png",
+    "Price":"50",
+    "Desc": "Kovilpatti kadalai mittai is a candy made of peanuts held together with glistening syrup, and topped with wisps of grated coconut dyed pink, green and yellow"
+},
+{
+    "ProName": "Madurai Malli",
+    "ProType": "Agriculture",
+    "Origin": "Madurai",
+    "image":"https://i.ibb.co/XFXFsqn/loose-jasmine-flower-500x500.jpg",
+    "Price":"150",
+    "Desc": "Madurai's unique link with the jasmine probably dates back to 300 BC or earlier. There are extensive references to the flower in Sangam literature — the Tamil poems of the period 300 BC to AD 300,which are believed to have been composed or written at the Sangam or assembly of Tamil scholars, regularly held in Madurai during that period. One of the Sangam poems describes how Pari, a Tamil king, could not bear to see a beautiful and delicate mullai jasmine creeper lying on the hard forest floor. And he gifted his royal chariot to the plant so that the jasmine creeper could twine itself around it and rest more comfortably! The Jasmine is mentioned in old Hindu scriptures and also in ancient works like the Mahabharata and Kamasutra."
+},
+{
+    "ProName": "Madurai Meenakshi Kumkum",
+    "ProType": "Religious",
+    "Origin": "Madurai",
+    "image":"https://i.ibb.co/RpS8KDd/i01-pooja-kumkum-500x500.jpg",
+    "Price":"1299",
+    "Desc": "THE famous Meenakshi temple in Madurai is all set to become synonymous with kumkum, on the lines of Palani Murugan temple for panchamirtham and Tirupathi Venkateswara temple for laddu. The pure kumkum comes in packets of three sizes, depending on the quantity – 8 grams, 40 grams and 100 grams, with the image of Goddess Meenakshi printed on the sachets."
+},
+{
+    "ProName": "Madurai Sungudi",
+    "ProType": "Handicraft",
+    "Origin": "Madurai",
+    "image":"https://i.ibb.co/F68C7Cr/i01-product-jpeg-500x500-1.jpg",
+    "Price":"999",
+    "Desc": "Madurai Sungudi is a cotton fabric of Madurai in the Indian state of Tamil Nadu, which is an exclusive textile product traditionally produced using tie and dye method by the Saurashtrians who migrated to Madurai under the patronage of King Thirumalai Naicker in the 17th century."
+},
+{
+    "ProName": "Mahabalipuram Stone Sculpture",
+    "ProType": "Handicraft",
+    "Origin": "Mahabalipuram",
+    "image":"https://i.ibb.co/hLpxFqC/i01-11-500x660.jpg",
+    "Price":"11999",
+    "Desc": "Marble has been the preferred stone for sculptors in the European tradition ever since the time of classical Greece. It is available in a wide variety of colors, from white through pink and red to grey and black. The hardest stone frequently carved is granite, at about 8 on the Mohs scale."
+},
+{
+    "ProName": "Nachiarkoil Kuthuvilakku (Nachiarkoil Lamp)",
+    "ProType": "Handicraft",
+    "Origin": "Nachiarkoil",
+    "image":"https://i.ibb.co/KmQG46D/i01-24-inch-2-piece-500x500.jpg",
+    "Price":"750",
+    "Desc": "The Nachiarkoil lamp, also called Annam lamp or Nachiarkoil Kuthuvilakku, is an ornamental brass lamp made of series of diyas, a handicraft product which is exclusively made by Pather community in Nachiyar Koil town in Tamil Nadu, India. "
+},
+{
+    "ProName": "Nilgiri (Orthodox)",
+    "ProType": "Agriculture",
+    "Origin": "Nilgiri",
+    "image":"https://i.ibb.co/Y7THt69/i01-nilgiri-orthodox-tea-500x500.jpg",
+    "Price":"450",
+    "Desc": "Nilgiri tea is a drink made by infusing leaves of Camellia sinensis that is grown and processed in the Nilgiris district in Tamil Nadu, India. The leaves are processed as black tea, though some estates have expanded their product offerings to include leaves suitable for making green, white and oolong teas. It is generally described as being a brisk, fragrant and full-bodied tea. The region produces both rolled and crush, tear, curl tea and it is predominately used for blending. Nilgiri tea is also used for making iced tea and instant tea."
+},
+{
+    "ProName": "Palani Vibhuti",
+    "ProType": "Religious",
+    "Origin": "Palani",
+    "image":"https://i.ibb.co/5hJBBGQ/i01-images-2.jpg",
+    "Price":"50",
+    "Desc": "Vibhuti is A Favourite Item Of Lord Shiva. He Always Smears His Body With the Holy Ash as It is the most Purest thing In this Universe.Palani Sithanadhan is very famous in all over India. The Sanskrit Word, Vibhooti Means ˜Glory\" , As it Gives glory to One Who Applies It, Protection From ill Health and Negative Forces, and attracts the higher Forces Of Nature. Vibhoothi gets charged with Positive Energy ,and Should be taken With the Right Hand and applied On The Forehead as Three Horizontal Lines. The First Line Stands For removal Of Ahankar (Pride), the Next Stands For Removal Of ignorance and the third stands for removal Of Bad Karma (Actions)."
+},
+{
+    "ProName": "Panchamirtham' of Palani Murugan Temple",
+    "ProType": "Food",
+    "Origin": "Palani",
+    "image":"https://i.ibb.co/QFjvZdZ/i01-unnamed-1.jpg",
+    "Price":"100",
+    "Desc": "The Palani panchamirtham is made by combining in a prescribed proportion five natural substances – banana, cow ghee, cardamom, jaggery and honey – which is why the 'pancha', meaning five, comes in the name. 'Amirtham' on the other hand, translates from Tamil, to delicacy"
+},
+{
+    "ProName": "Pathamadai Mat",
+    "ProType": "Handicraft",
+    "Origin": "Pathamadai",
+    "image":"https://i.ibb.co/X243fgj/i01-download-3.jpg",
+    "Price":"650",
+    "Desc": "Inclusion of technology in the making of traditional Pathamadai silk mat through the use of electronic powerloom is ensuring higher production and income for weaving community. Handmade Pathamadai silk mats are also called Pattu paai. Traditional art of weaving pathamadai silk mat belongs to the Tirunelveli district of Tamil Nadu. Pathamadai mat is made up of Korai grass. Pathamadai mats have been granted Geographical Indication (GI) status by the trademarks and GI authorities. These are made specially for wedding ceremonies and have bride’s and groom's names as well as the wedding date woven in it."
+},
+{
+    "ProName": "Salem Fabric",
+    "ProType": "Handicraft",
+    "Origin": "Salem",
+    "image":"https://i.ibb.co/x8gvyfd/i01-printed-rayon-fabric-500x500.jpg",
+    "Price":"799",
+    "Desc": "Salem was one of the primary handloom centers of south India. Sari, dhoti and angavasthram are made out of silk yarn and cotton yarn. In the recent past, home furnishing items are also woven, mainly for export purposes."
+},
+{
+    "ProName": "Salem Silk",
+    "ProType": "Handicraft",
+    "Origin": "Salem",
+    "image":"https://i.ibb.co/x6kmg1F/i01-wedding-silk-sarees.jpg",
+    "Price":"1499",
+    "Desc": "Salem Silk known as Salem Venpattu refer to silk clothes made in Salem, Tamil Nadu. It received Intellectual Property Rights Protection or Geographical Indication (GI) status"
+},
+{
+    "ProName": "Sirumalai Hill Banana",
+    "ProType": "Agriculture",
+    "Origin": "Sirumalai",
+    "image":"https://i.ibb.co/vL1NzvC/i01-images-1-500x660.jpg",
+    "Price":"150",
+    "Desc": "Sirumalai hill banana is one of the most important heritage banana of Tamil Nadu. This fruit is enjoyed by millions of people all over the world. Banana can also be included in some of the dishes ranging from savories to desserts. Sirumalai Hill banana can now be bought online easily at Tredy Foods."
+},
+{
+    "ProName": "Srivilliputtur Palkova",
+    "ProType": "Food",
+    "Origin": "Srivilliputtur",
+    "image":"https://i.ibb.co/T23XMRK/i01-719dq-ENF4b-L-SL1200.jpg",
+    "Price":"250",
+    "Desc": "Srivilliputhur Palkova is a milk based sweet which is enriched with pure milk. It is made in srivilliputhur is something that makes it very special to eat. Srivilliputhur Palkova is also the authentic sweet of tamilnadu."
+},
+{
+    "ProName": "Swamimalai Bronze Icons",
+    "ProType": "Handicraft",
+    "Origin": "Swamimalai",
+    "image":"https://i.ibb.co/Rbc7pS1/i01-bronze-metal.jpg",
+    "Price":"600",
+    "Desc": "Swamimalai Bronze Icons refers to bronze idols and statues manufactured in Swamimalai, Tamil Nadu. It has been recognized as a Geographical indication by the Government of India in 2008–09."
+},
+{
+    "ProName": "Temple Jewellery of Nagercoil",
+    "ProType": "Handicraft",
+    "Origin": "Nagercoil",
+    "image":"https://i.ibb.co/N7xzJ34/i01-download-4.jpg",
+    "Price":"3999",
+    "Desc": "This traditional jewellery is made of the finest gold embedded with several precious gems and stones and is also the authentic ones which are used by classical dancers. According to S Muthuswamy, a craftsman from Vadaserry, who received the certificate, they use a peculiar red and green stone called ‘Kuchu kal’ for making the jewellery. They get the stone from river bed, he added"
+},
+{
+    "ProName": "Thanjavur Art Plate",
+    "ProType": "Handicraft",
+    "Origin": "Thanjavur",
+    "image":"https://i.ibb.co/2cbqN26/i01-ganesh-tanjore-art-plate-art-shield-500x500.jpg",
+    "Price":"750",
+    "Desc": "The Thanjavur Art Plate is an artifact which is exclusively made in Thanjavur, Tamil Nadu, India. It is a circular plate made as a gift item. It is a handicraft consisting of metals such as silver, bronze, and copper embossed with figures of gods and goddesses at its center"
+},
+{
+    "ProName": "Thanjavur Doll",
+    "ProType": "Handicraft",
+    "Origin": "Thanjavur",
+    "image":"https://i.ibb.co/D4D99HS/i01-a04be75a04659ceab78c80a974e48ee2.jpg",
+    "Price":"1199",
+    "Desc": "The Thanjavur doll is a type of traditional Indian bobblehead or roly-poly toy made of terracotta material. The centre of gravity and total weight of the doll is concentrated at its bottom-most point, generating a dance-like continuous movement with slow oscillations.[1] These toys are traditionally handmade, finished with detailed, painted exteriors. They have been recognized as a Geographical Indication by the Government of India as of 2008-09.[2]"
+},
+{
+    "ProName": "Thanjavur Paintings",
+    "ProType": "Handicraft",
+    "Origin": "Thanjavur",
+    "image":"https://i.ibb.co/jrwz6jW/i01-thanjavur-painting-500x500.jpg",
+    "Price":"1499",
+    "Desc": "Thanjavur painting is a classical South Indian painting style, which was inaugurated from the town of Thanjavur (anglicized as Tanjore). The art form draws its immediate resources and inspiration from way back about 1600 AD, a period when the Nayakas of Thanjavur under the suzerainty of the Vijayanagara Rayas encouraged art—chiefly, classical dance and music—as well as literature, both in Telugu and Tamil and painting of chiefly Hindu religious subjects in temples. It is distinguished by its famous gold coating. However, it can safely be surmised that Thanjavur painting, as we know it now, originated in the Maratha court of Thanjavur (1676–1855). It has been recognized as a Geographical indication by the Government of India in 2007-08."
+},
+{
+    "ProName": "Thanjavur Pith Works",
+    "ProType": "Handicraft",
+    "Origin": "Thanjavur",
+    "image":"https://i.ibb.co/bdGw0qn/i01-Pith-works.jpg",
+    "Price":"3499",
+    "Desc": "Thanjavur Netti Works is done from pith. The pith is obtained from netti which is a hydrophyte plant called as Aeschynomene Aspera. The artisans of Tamil Nadu are skilled in this particular craft and the art is traditionally transferred to them from their forefathers."
+},
+{
+    "ProName": "Thanjavur Veenai (Tanjore Veena)",
+    "ProType": "Handicraft",
+    "Origin": "Thanjavur",
+    "image":"https://i.ibb.co/0QvXQ9d/i01-W1-265x290.jpg",
+    "Price":"7999",
+    "Desc": "It is unique in Thanjavur because the instrument is made from a particular strain of matured jack fruit tree found only in that area. The only link between music and Thanjavur was carried forward by the makers of the musical instruments."
+},
+{
+    "ProName": "Toda Embroidery",
+    "ProType": "Handicraft",
+    "Origin": "Nilgiri",
+    "image":"https://i.ibb.co/ctVN0WW/i01-383ebb38082fab04c8d4734d4a7e77dc.jpg",
+    "Price":"399",
+    "Desc": "The Toda Embroidery, also locally known as \"pukhoor\", is an art work among the Toda pastoral people of Nilgiris, in Tamil Nadu, made exclusively by their women. The embroidery, which has a fine finish, appears like a woven cloth but is made with use of red and black threads with a white cotton cloth background."
+},
+{
+    "ProName": "Virupakshi Hill Banana",
+    "ProType": "Agriculture",
+    "Origin": "Virupakshi",
+    "image":"https://i.ibb.co/vL1NzvC/i01-images-1-500x660.jpg",
+    "Price":"200",
+    "Desc": "Hill Bananas owe their name, and distinct flavour, to the Palani Hills of Tamil Nadu in the southernmost part of the Indian peninsula. Their reputation is such that in late 2008 two Pome cultivars, ‘Virupakshi’ and ‘Sirumalai’, each received a Geographic Indication designation in recognition of the unique characteristics conferred by the interaction between the cultivars and the environment."
+}]

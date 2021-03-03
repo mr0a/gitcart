@@ -1,0 +1,55 @@
+{% extends 'mainapp/base.html' %}
+
+{% block title %}{{product.title}}{% endblock %}
+{% block content %}
+
+<div class="container">
+  <div id="success-alert" class="alert alert-success d-none" role="alert">
+    A simple success alert—check it out!
+  </div>
+  <div class="card" style="background:linen; padding: 50px;">
+    <div class="row row-content align-items-center">
+      <div class="col-12 col-md-6">
+        <img src="{{product.image}}" alt="Product" style="width:100%;">
+      </div>
+      <div class="col-12 col-md-4 col-lg-6">
+        <h2 style="font-weight: bold;">{{product.title}}</h2>
+        <div class="badge badge-info badge-primary">
+          <h5>₹ {{product.price}}</h5>
+        </div>
+        <br>
+        <br>
+        <p><button class="addToCart btn btn-primary">Add to Cart</button></p>
+      </div>
+        <p style="margin:20px; padding: 10px; border: 2px solid black;">{{product.description}}</p>
+  </div>
+</div>
+
+
+<script>
+  let product_id = {{product.id}};
+  function addHandler(){
+    let cartCount = localStorage.getItem('cartCount');
+    let products = localStorage.getItem('cart');
+    if (cartCount == null){
+      localStorage.setItem('cartCount',1);
+      products = {};
+      products[product_id] = 1;
+      localStorage.setItem('cart', JSON.stringify(products));
+    }else {
+      localStorage.setItem('cartCount', parseInt(cartCount)+1);
+      products = JSON.parse(products);
+      products[product_id] += 1;
+      localStorage.setItem('cart', JSON.stringify(products));
+      // console.log(products);
+    };
+    cartCountHandler();
+    $("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
+        $("#success-alert").removeClass('d-none');
+        $("#success-alert").slideUp(500);
+    });
+  };
+  document.getElementsByClassName('addToCart')[0].addEventListener('click', addHandler);
+</script>
+
+{% endblock %}

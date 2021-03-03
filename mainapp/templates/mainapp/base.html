@@ -1,0 +1,186 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<title>{% block title %}{% endblock %}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'w3.css' %}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<style>
+  .w3-sidebar a {
+    font-family: "Roboto", sans-serif
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .w3-wide {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+  form.example button:hover {
+    background: #0b7dda;
+  }
+
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #lblCartCount {
+    font-size: 12px;
+    /* background: #ff0000; */
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -25px;
+}
+</style>
+
+<body class="w3-content" style="max-width:1200px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <h3 class="w3-wide"><b>GIT Cart</b></h3>
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+      <!--department starting-->
+      <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+        Departments <i class="fa fa-caret-down"></i>
+      </a>
+      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        <a href="#" class="w3-bar-item w3-button">Arani</a>
+        <a href="#" class="w3-bar-item w3-button">Arumbavur</a>
+        <a href="#" class="w3-bar-item w3-button">Bannari</a>
+        <a href="#" class="w3-bar-item w3-button">Bhavani</a>
+        <a href="#" class="w3-bar-item w3-button">Chettinad</a>
+        <a href="#" class="w3-bar-item w3-button">Coimbatore</a>
+        <a href="#" class="w3-bar-item w3-button">Dindigul</a>
+        <a href="#" class="w3-bar-item w3-button">Eathomozhy</a>
+        <a href="#" class="w3-bar-item w3-button">Erode</a>
+        <a href="#" class="w3-bar-item w3-button">Kancheepuram</a>
+        <a href="#" class="w3-bar-item w3-button">Kandangi</a>
+        <a href="#" class="w3-bar-item w3-button">Kovai</a>
+        <a href="#" class="w3-bar-item w3-button">Kovilpatti</a>
+        <a href="#" class="w3-bar-item w3-button">Madurai</a>
+        <a href="#" class="w3-bar-item w3-button">Mahabalipuram</a>
+        <a href="#" class="w3-bar-item w3-button">Nachiarkoil</a>
+        <a href="#" class="w3-bar-item w3-button">Nilgiri</a>
+        <a href="#" class="w3-bar-item w3-button">Palani</a>
+        <a href="#" class="w3-bar-item w3-button">Pathamadai</a>
+        <a href="#" class="w3-bar-item w3-button">Salem</a>
+        <a href="#" class="w3-bar-item w3-button">Sirumalai</a>
+        <a href="#" class="w3-bar-item w3-button">Srivilliputtur</a>
+        <a href="#" class="w3-bar-item w3-button">Swamimalai</a>
+        <a href="#" class="w3-bar-item w3-button">Nagercoil</a>
+        <a href="#" class="w3-bar-item w3-button">Thanjavur</a>
+        <a href="#" class="w3-bar-item w3-button">Virupakshi</a>
+      </div>
+      <!--departments ending-->
+
+    </div>
+    
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
+        class="fa fa-bars"></i></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+    <div class="w3-main" style="margin-left:250px">
+        <header class="w3-container w3-xlarge">
+            <br>
+            <p class="w3-center"><a href="{% url 'index' %}">GIT Cart</a></p>
+            <p class="w3-right">
+              <i class="fa fa-shopping-cart w3-margin-right"></i>
+              <span class='badge badge-success' id='lblCartCount'></span>
+              <i class="fa fa-search"></i>
+            </p>
+        </header>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+
+<script>
+    function cartCountHandler(){
+        let cartCount = localStorage.getItem('cartCount');
+        let cart = document.getElementById('lblCartCount');
+        if (!cartCount){
+            cart.innerText = 0;
+        }else cart.innerText = cartCount;
+    }
+
+    $().ready(()=>{
+      cartCountHandler();
+    });
+    function myAccFunc() {
+      var x = document.getElementById("demoAcc");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    document.getElementById("myBtn").click();
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+
+</body>
+
+</html>
