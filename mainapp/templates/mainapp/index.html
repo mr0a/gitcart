@@ -29,15 +29,18 @@
     <div class="container">
       <div class="row">
         {% for product in products %}
-        <div class="col-sm">
-          <div class="w3-display-container">
-            <img src="{{product.image}}" style="height: 250px; width: 250px;">
+        <div class="col-sm-4">
+          <!-- <div class="w3-display-container"> -->
+            <a href="{% url 'productdetail' id=product.id %}">
+              <img src="{{product.image}}" style="height: 250px; width: 250px;">
+            </a>
             <span class="w3-tag w3-display-topleft">New</span>
             <div class="w3-display-middle w3-display-hover">
               <button class="w3-button w3-black"><a href="{% url 'productdetail' id=product.id %}">View Details <i class="fa fa-shopping-cart"></i></a></button>
             </div>
-          </div>
-          <p>{{product.title}}<br><b>₹ {{product.price}}</b></p>
+          <!-- </div> -->
+          <p style="text-align: center;">{{product.title}}</p>
+          <p style="text-align: center;"><b>₹ {{product.price}}</b></p>
         </div>
         {% endfor %}
       </div>

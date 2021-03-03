@@ -86,35 +86,12 @@
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
       <!--department starting-->
       <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-        Departments <i class="fa fa-caret-down"></i>
+        City <i class="fa fa-caret-down"></i>
       </a>
       <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-        <a href="#" class="w3-bar-item w3-button">Arani</a>
-        <a href="#" class="w3-bar-item w3-button">Arumbavur</a>
-        <a href="#" class="w3-bar-item w3-button">Bannari</a>
-        <a href="#" class="w3-bar-item w3-button">Bhavani</a>
-        <a href="#" class="w3-bar-item w3-button">Chettinad</a>
-        <a href="#" class="w3-bar-item w3-button">Coimbatore</a>
-        <a href="#" class="w3-bar-item w3-button">Dindigul</a>
-        <a href="#" class="w3-bar-item w3-button">Eathomozhy</a>
-        <a href="#" class="w3-bar-item w3-button">Erode</a>
-        <a href="#" class="w3-bar-item w3-button">Kancheepuram</a>
-        <a href="#" class="w3-bar-item w3-button">Kandangi</a>
-        <a href="#" class="w3-bar-item w3-button">Kovai</a>
-        <a href="#" class="w3-bar-item w3-button">Kovilpatti</a>
-        <a href="#" class="w3-bar-item w3-button">Madurai</a>
-        <a href="#" class="w3-bar-item w3-button">Mahabalipuram</a>
-        <a href="#" class="w3-bar-item w3-button">Nachiarkoil</a>
-        <a href="#" class="w3-bar-item w3-button">Nilgiri</a>
-        <a href="#" class="w3-bar-item w3-button">Palani</a>
-        <a href="#" class="w3-bar-item w3-button">Pathamadai</a>
-        <a href="#" class="w3-bar-item w3-button">Salem</a>
-        <a href="#" class="w3-bar-item w3-button">Sirumalai</a>
-        <a href="#" class="w3-bar-item w3-button">Srivilliputtur</a>
-        <a href="#" class="w3-bar-item w3-button">Swamimalai</a>
-        <a href="#" class="w3-bar-item w3-button">Nagercoil</a>
-        <a href="#" class="w3-bar-item w3-button">Thanjavur</a>
-        <a href="#" class="w3-bar-item w3-button">Virupakshi</a>
+        {% for city in cities%}
+          <a href="{% url 'index' %}?city={{city.origin}}" class="w3-bar-item w3-button">{{city.origin}}</a>
+        {% endfor %}
       </div>
       <!--departments ending-->
 

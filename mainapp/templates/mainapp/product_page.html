@@ -4,9 +4,6 @@
 {% block content %}
 
 <div class="container">
-  <div id="success-alert" class="alert alert-success d-none" role="alert">
-    A simple success alert—check it out!
-  </div>
   <div class="card" style="background:linen; padding: 50px;">
     <div class="row row-content align-items-center">
       <div class="col-12 col-md-6">
@@ -28,6 +25,7 @@
 
 <script>
   let product_id = {{product.id}};
+  
   function addHandler(){
     let cartCount = localStorage.getItem('cartCount');
     let products = localStorage.getItem('cart');
@@ -44,11 +42,15 @@
       // console.log(products);
     };
     cartCountHandler();
-    $("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
-        $("#success-alert").removeClass('d-none');
-        $("#success-alert").slideUp(500);
-    });
+    let alert = `<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Hoooraaaaay!</strong> Product added to your cart successfully!
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>`;
+    $(alert).insertBefore('.card');
   };
+
   document.getElementsByClassName('addToCart')[0].addEventListener('click', addHandler);
 </script>
 

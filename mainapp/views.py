@@ -8,9 +8,15 @@ import json
 
 def index(req):
     queryset = Products.objects.all()
+    cities = Products.objects.order_by().values('origin').distinct()
+    ctx = {'cities': cities}
+    if req.GET.get('city'):
+        city = req.GET.get('city')
+        city_product = Products.objects.filter(origin=city)
+        ctx['products'] = city_product
+        return render(req, 'mainapp/index.html', context=ctx)
     value = len(queryset) - len(queryset)%3
-    ctx = {'products': queryset[0:value]}
-    print(ctx)
+    ctx['products'] = queryset[0:value]
     return render(req, 'mainapp/index.html', context=ctx)
 
 
@@ -35,7 +41,8 @@ def ProductWithFile(req):
 
 
 def ProductDetailPage(req, id):
+    cities = Products.objects.order_by().values('origin').distinct()
+    ctx = {'cities': cities}
     product = Products.objects.filter(id=id)
-    # print(dict(product[0]))
-    ctx = {'product': product[0]}
+    ctx['product'] =  product[0]
     return render(req, 'mainapp/product_page.html', context=ctx)
