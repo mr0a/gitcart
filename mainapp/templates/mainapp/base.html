@@ -172,7 +172,7 @@
     function cartCountDisplay() {
       let cartCount = localStorage.getItem('cartCount');
       let cart = document.getElementById('lblCartCount');
-      if (!cartCount) {
+      if (!cartCount>=0) {
         cart.innerText = 0;
       } else cart.innerText = cartCount;
     };
