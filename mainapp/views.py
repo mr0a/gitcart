@@ -76,3 +76,34 @@ def pages(request):
     
         html_template = loader.get_template( 'page-500.html' )
         return HttpResponse(html_template.render(context, request))
+
+
+from django.contrib.auth import authenticate, get_user_model, logout, login as auth_login
+
+def login(req):
+    if req.user.is_authenticated:
+        return redirect('/')
+    if req.method == 'POST':
+        print(req.POST)
+        user = authenticate(req, username=req.POST.get('email'), password=req.POST.get('password'), name='Demo')
+        print(user)
+        if user is not None:
+            auth_login(req, user)
+            return redirect('index')
+    return render(req, 'mainapp/login.html')
+
+
+def signup(req):
+    if req.user.is_authenticated:
+        return redirect('/')
+    if req.method == 'POST':
+        user_model = get_user_model()
+        user = user_model.objects.create(name=req.POST.get('name'), email=req.POST.get('email'), password = req.POST.get('password1'))
+        print(user)
+        return redirect('login')
+    return render(req, 'mainapp/signup.html')
+
+def auth_logout(req):
+    if req.user.is_authenticated:
+        logout(req)
+    return redirect('index')

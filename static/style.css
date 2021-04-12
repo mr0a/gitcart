@@ -973,7 +973,7 @@ html {
   
   .header-button-block {
     height: 40px;
-    width: 160px;
+    width: max-content;
     margin: 12px;
     border-radius: 4px;
     display: flex;

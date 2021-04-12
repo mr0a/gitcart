@@ -40,8 +40,24 @@
             </svg></span><input type="text" placeholder="Search for Products" value=""></div>
       </div>
       <div class="header-item-block">
-        <div class="header-button-block pointer">GIT Stories</div>
-        <div class="header-button-block pointer">Become a GIT Sponsored Supplier</div>
+        <div class="header-button-block"><h6 class="pointer">GIT Stories</h4></div>
+        <div class="header-button-block">
+          <a style="text-decoration: none;" href="{% url 'gitsponsor' %}">
+          <h6 class="pointer">Become a GIT Sponsored Supplier</h6>
+        </a>
+      </div>
+        <div class="header-button-block">
+          {% if user.is_authenticated %}
+          <a href="{% url 'login' %}">
+            <!-- <h6 class="pointer">{{user.fullname}}</h6> -->
+            <a href="{% url 'logout' %}"><h6 class="pointer">Logout</h6></a>
+          </a>
+          {% else %}
+          <a href="{% url 'login' %}">
+            <h6 class="pointer">Login</h6>
+          </a>
+          {% endif %}
+        </div>
         <div style="position: relative;height: 10vh;" class="header-button-block">
           <button class="btn" onclick="cartHandler()"><i class="fa fa-lg fa-shopping-cart"></i></button>
           <span style="position: relative; right: 15px; top: -10px;" class='badge badge-success'
@@ -50,21 +66,21 @@
       </div>
     </div>
     <div class="nav-head-container">
-      <span class="nav-head-item pointer nonHover">Women Ethnic<img alt="arrow" class="nav-head-icon"
+      <span class="nav-head-item pointer nonHover">Groceries and Spices<img alt="arrow" class="nav-head-icon"
           src="{% static 'nav_head_arr.svg' %}"></span>
-      <span class="nav-head-item pointer nonHover">Women Western<img alt="arrow" class="nav-head-icon"
+      <span class="nav-head-item pointer nonHover">Wooden arts<img alt="arrow" class="nav-head-icon"
           src="{% static 'nav_head_arr.svg' %}"></span><span class="nav-head-item pointer nonHover">Jewellery
         &amp; Accessories<img alt="arrow" class="nav-head-icon" src="{% static 'nav_head_arr.svg' %}"></span>
-      <span class="nav-head-item pointer nonHover">Men<img alt="arrow" class="nav-head-icon"
+      <span class="nav-head-item pointer nonHover">Cotton Clothes<img alt="arrow" class="nav-head-icon"
           src="{% static 'nav_head_arr.svg' %}"></span>
-      <span class="nav-head-item pointer nonHover">Beauty &amp;
-        Health<img alt="arrow" class="nav-head-icon" src="{% static 'nav_head_arr.svg' %}"></span>
+      <span class="nav-head-item pointer nonHover">Beauty Products
+        <img alt="arrow" class="nav-head-icon" src="{% static 'nav_head_arr.svg' %}"></span>
       <span class="nav-head-item pointer nonHover">Bags &amp;
         Footwear<img alt="arrow" class="nav-head-icon" src="{% static 'nav_head_arr.svg' %}"></span>
       <span class="nav-head-item pointer nonHover">Home &amp; Kitchen<img alt="arrow" class="nav-head-icon"
-          src="{% static 'nav_head_arr.svg' %}"></span><span class="nav-head-item pointer nonHover">Kids<img alt="arrow"
+          src="{% static 'nav_head_arr.svg' %}"></span><span class="nav-head-item pointer nonHover">Toys<img alt="arrow"
           class="nav-head-icon" src="{% static 'nav_head_arr.svg' %}"></span>
-      <span class="nav-head-item pointer nonHover">Electronics<img alt="arrow" class="nav-head-icon"
+      <span class="nav-head-item pointer nonHover">Divine Products<img alt="arrow" class="nav-head-icon"
           src="{% static 'nav_head_arr.svg' %}"></span>
     </div>
   </div>
