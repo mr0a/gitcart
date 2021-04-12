@@ -28,20 +28,20 @@
   
   function addHandler(){
     let cartCount = localStorage.getItem('cartCount');
-    let products = localStorage.getItem('cart');
-    if (cartCount == null){
-      localStorage.setItem('cartCount',1);
-      products = {};
-      products[product_id] = 1;
+    if(cartCount == null){
+      localStorage.setItem('cart', JSON.stringify({}));
+      localStorage.setItem('cartCount', 1);
+    } else localStorage.setItem('cartCount', parseInt(cartCount)+1);
+    let products = JSON.parse(localStorage.getItem('cart'));
+    if (products[product_id] == null){
+      products[product_id] = { name: "{{product.title}}", price: {{product.price}}, quantity: 1, image: "{{product.image}}" };
       localStorage.setItem('cart', JSON.stringify(products));
-    }else {
-      localStorage.setItem('cartCount', parseInt(cartCount)+1);
-      products = JSON.parse(products);
-      products[product_id] += 1;
-      localStorage.setItem('cart', JSON.stringify(products));
+    } else {
+      products[product_id]['quantity'] += 1;
       // console.log(products);
+      localStorage.setItem('cart', JSON.stringify(products));
     };
-    cartCountHandler();
+    cartCountDisplay();
     let alert = `<div class="alert alert-success alert-dismissible fade show" role="alert">
     <strong>Hoooraaaaay!</strong> Product added to your cart successfully!
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">

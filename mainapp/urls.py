@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
@@ -7,4 +7,6 @@ urlpatterns = [
     path('products/view/', views.ProductListView.as_view()),
     path('products/add/file', views.ProductWithFile, name='productfile'),
     path('products/<id>/', views.ProductDetailPage, name='productdetail'),
+    path('sponsor/', views.gitSponsor, name='gitsponsor'),
+    re_path(r'^.*\.*', views.pages, name='pages'),
 ]

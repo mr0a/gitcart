@@ -2,6 +2,9 @@ from django.db import models
 from django.shortcuts import redirect, render
 from django.views.generic import CreateView, ListView
 from .models import Products
+from django.template import loader
+from django.http import HttpResponse
+from django import template
 
 import json
 
@@ -46,3 +49,30 @@ def ProductDetailPage(req, id):
     product = Products.objects.filter(id=id)
     ctx['product'] =  product[0]
     return render(req, 'mainapp/product_page.html', context=ctx)
+
+def gitSponsor(req):
+    return render(req, 'sponsor/sponsor.html')
+
+def pages(request):
+    context = {}
+    # All resource paths end in .html.
+    # Pick out the html file name from the url. And load that template.
+    try:
+        
+        load_template      = request.path.split('/')[-1]
+        load_template = 'sponsor/' + load_template
+        print(load_template)
+        # context['segment'] = load_template
+        
+        html_template = loader.get_template( load_template )
+        return HttpResponse(html_template.render(context, request))
+        
+    except template.TemplateDoesNotExist:
+
+        html_template = loader.get_template( 'page-404.html' )
+        return HttpResponse(html_template.render(context, request))
+
+    except:
+    
+        html_template = loader.get_template( 'page-500.html' )
+        return HttpResponse(html_template.render(context, request))

@@ -72,7 +72,8 @@
     padding: 0 5px;
     vertical-align: top;
     margin-left: -25px;
-}
+    margin-right: 10px;
+  }
 </style>
 
 <body class="w3-content" style="max-width:1200px">
@@ -81,7 +82,7 @@
   <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <h3 class="w3-wide"><b>GIT Cart</b></h3>
+      <a href="{% url 'index' %}"><h3 class="w3-wide"><b>GIT Cart</b></h3></a>
     </div>
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
       <!--department starting-->
@@ -90,18 +91,18 @@
       </a>
       <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
         {% for city in cities%}
-          <a href="{% url 'index' %}?city={{city.origin}}" class="w3-bar-item w3-button">{{city.origin}}</a>
+        <a href="{% url 'index' %}?city={{city.origin}}" class="w3-bar-item w3-button">{{city.origin}}</a>
         {% endfor %}
       </div>
       <!--departments ending-->
 
     </div>
-    
+
   </nav>
 
   <!-- Top menu on small screens -->
   <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-    <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+    <div class="w3-bar-item w3-padding-24 w3-wide"><a href="{% url 'index' %}">GIT CART</a></div>
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
         class="fa fa-bars"></i></a>
   </header>
@@ -110,33 +111,121 @@
   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
     id="myOverlay"></div>
 
-    <div class="w3-main" style="margin-left:250px">
-        <header class="w3-container w3-xlarge">
-            <br>
-            <p class="w3-center"><a href="{% url 'index' %}">GIT Cart</a></p>
-            <p class="w3-right">
-              <i class="fa fa-shopping-cart w3-margin-right"></i>
-              <span class='badge badge-success' id='lblCartCount'></span>
-              <i class="fa fa-search"></i>
-            </p>
-        </header>
-        {% block content %}
-
-        {% endblock %}
+  <!-- Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Your Shopping Cart
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table id="cartTable" class="table table-image table-responsive-sm">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Product</th>
+                <th scope="col">Price</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Total</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Inserted with js -->
+            </tbody>
+          </table>
+          <div class="d-flex justify-content-end">
+            <h5>Total: <span class="price text-success" id="cartTotal"></span></h5>
+          </div>
+        </div>
+        <div class="modal-footer border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Checkout</button>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="w3-main" style="margin-left:250px">
+    <header class="w3-container w3-xlarge">
+      <br>
+      <p class="w3-center"><a href="{% url 'index' %}">GIT Cart</a></p>
+      <p class="w3-right">
+        <button class="btn" onclick="cartHandler()"><i class="fa fa-lg fa-shopping-cart w3-margin-right"></i></button>
+        <span class='badge badge-success' id='lblCartCount'></span>
+        <i class="fa fa-search"></i>
+      </p>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+  </div>
 
 
-<script>
-    function cartCountHandler(){
-        let cartCount = localStorage.getItem('cartCount');
-        let cart = document.getElementById('lblCartCount');
-        if (!cartCount){
-            cart.innerText = 0;
-        }else cart.innerText = cartCount;
+  <script>
+    function cartCountDisplay() {
+      let cartCount = localStorage.getItem('cartCount');
+      let cart = document.getElementById('lblCartCount');
+      if (!cartCount) {
+        cart.innerText = 0;
+      } else cart.innerText = cartCount;
+    };
+
+    function cartDelete(id){
+      console.log(id);
+      let cart = JSON.parse(localStorage.getItem('cart'));
+      let count = localStorage.getItem('cartCount');
+      localStorage.setItem('cartCount', count - cart[id]['quantity']);
+      delete cart[id];
+      $('#cartModal').modal('hide');
+      // cartHandler();
+      cartCountDisplay();
+      localStorage.setItem('cart', JSON.stringify(cart));
     }
 
-    $().ready(()=>{
-      cartCountHandler();
+    function cartHandler() {
+      $('#cartModal').modal('show');
+      let cart = JSON.parse(localStorage.getItem('cart'));
+
+      let table = document.getElementById('cartTable');
+      let total = 0;
+      
+      console.log(table.rows.length);
+      for(let i=table.rows.length; i-1 > 0 ; i--){
+        table.deleteRow(i-1);
+      }
+      for (const product in cart) {
+        let item = cart[product];
+        total += item.quantity * item.price;
+        row_data = `<tr>
+                <td class="w-20">
+                  <img src="${item.image}"
+                    class="img-fluid img-thumbnail" height="100px" width="100px" alt="cart image">
+                </td>
+                <td>${item.name}</td>
+                <td>₹ ${item.price}</td>
+                <td class="qty"><input type="text" disabled class="form-control quantityControl" value="${item.quantity}" size="5"></td>
+                <td>₹ ${item.price * item.quantity}</td>
+                <td>
+                  <a href="#" onclick="cartDelete(${product})" class="btn btn-danger btn-sm">
+                    <i class="fa fa-times"></i>
+                  </a>
+                </td>
+              </tr>`;
+        let row = table.insertRow();
+        row.innerHTML = row_data;
+      }
+      document.getElementById('cartTotal').innerText = `₹ ${total}`;
+    }
+
+    $().ready(() => {
+      cartCountDisplay();
     });
     function myAccFunc() {
       var x = document.getElementById("demoAcc");
