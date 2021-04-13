@@ -79,6 +79,20 @@ def pages(request):
 
 
 from django.contrib.auth import authenticate, get_user_model, logout, login as auth_login
+from django.contrib.auth.views import LoginView
+
+from .forms import UserRegisterForm
+from django.urls import reverse_lazy
+from django.views import generic
+
+
+class SignUp(generic.CreateView):
+    form_class = UserRegisterForm
+    success_url = reverse_lazy('login')
+    template_name = 'mainapp/signup.html'
+
+class MyLoginView(LoginView):
+    template_name = 'mainapp/login.html'
 
 def login(req):
     if req.user.is_authenticated:
