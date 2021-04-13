@@ -26,7 +26,7 @@
 <body>
   <div class="header">
     <div class="header-container">
-      <div class="header-logo-container">
+      <div class="header-logo-container ml-3">
         <a style="text-decoration: none;" href="{% url 'index' %}">
           <img src="{% static 'gitlogof.jfif' %}" class="header-logo-img pointer" alt="meesho-brand-logo">
           <!-- <h3 class="header-logo-img pointer">GIT</h3> -->
@@ -37,7 +37,12 @@
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M1.36406 7.20406C1.36406 3.97872 3.97872 1.36406 7.20406 1.36406C10.4294 1.36406 13.0441 3.97872 13.0441 7.20406C13.0441 8.7756 12.4239 10.2016 11.4145 11.251C11.385 11.2742 11.3555 11.2996 11.328 11.328C11.2996 11.3555 11.2742 11.385 11.251 11.4145C10.2016 12.4239 8.7756 13.0441 7.20406 13.0441C3.97872 13.0441 1.36406 10.4294 1.36406 7.20406ZM11.6746 12.8526C10.4457 13.8266 8.89272 14.4075 7.20377 14.4075C3.2249 14.4075 0 11.1827 0 7.20377C0 3.2249 3.2249 0 7.20377 0C11.1827 0 14.4075 3.2249 14.4075 7.20377C14.4075 8.89272 13.8266 10.4457 12.8526 11.6746L15.7555 14.5775C16.0815 14.9025 16.0815 15.4305 15.7555 15.7555C15.4305 16.0815 14.9025 16.0815 14.5775 15.7555L11.6746 12.8526Z"
                 fill="#6D6D7A"></path>
-            </svg></span><input type="text" placeholder="Search for Products" value=""></div>
+            </svg></span>
+            <form method="get">
+              <input type="text" placeholder="Search for Products" name="search">
+              <input type="submit" class="d-none">
+            </form>
+          </div>
       </div>
       <div class="header-item-block">
         <div class="header-button-block"><h6 class="pointer">GIT Stories</h4></div>

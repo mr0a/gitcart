@@ -1,4 +1,4 @@
-from django.db import models
+from django.db.models import Q
 from django.shortcuts import redirect, render
 from django.views.generic import CreateView, ListView
 from .models import Products
@@ -13,10 +13,10 @@ def index(req):
     queryset = Products.objects.all()
     cities = Products.objects.order_by().values('origin').distinct()
     ctx = {'cities': cities}
-    if req.GET.get('city'):
-        city = req.GET.get('city')
-        city_product = Products.objects.filter(origin=city)
-        ctx['products'] = city_product
+    if req.GET.get('search'):
+        search = req.GET.get('search')
+        search_products = Products.objects.filter(Q(title__icontains=search)|Q(origin__icontains=search))
+        ctx['products'] = search_products
         return render(req, 'mainapp/index.html', context=ctx)
     value = len(queryset) - len(queryset)%3
     ctx['products'] = queryset[0:value]
